@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ekko98.github.io/"/>
-  <updated>2018-05-17T05:53:30.309Z</updated>
+  <updated>2018-05-23T05:22:56.960Z</updated>
   <id>https://ekko98.github.io/</id>
   
   <author>
@@ -17,18 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>基于QT的git配置</title>
-    <link href="https://ekko98.github.io/2018/05/16/%E5%9F%BA%E4%BA%8EQT%E7%9A%84git%E9%85%8D%E7%BD%AE/"/>
-    <id>https://ekko98.github.io/2018/05/16/基于QT的git配置/</id>
-    <published>2018-05-16T09:19:50.000Z</published>
-    <updated>2018-05-17T05:53:30.309Z</updated>
+    <title>Clion-Cmake语法</title>
+    <link href="https://ekko98.github.io/2018/05/23/Cmake-grammer/"/>
+    <id>https://ekko98.github.io/2018/05/23/Cmake-grammer/</id>
+    <published>2018-05-23T04:27:00.000Z</published>
+    <updated>2018-05-23T05:22:56.960Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;yes&quot;&gt;&lt;a href=&quot;#yes&quot; class=&quot;headerlink&quot; title=&quot;yes&quot;&gt;&lt;/a&gt;yes&lt;/h1&gt;
+        &lt;p&gt;写这个是因为在deepin下载了&lt;code&gt;CLion&lt;/code&gt;，以为可以舒服～的写&lt;code&gt;C/C++&lt;/code&gt;。。结果，打开seting一脸茫然，看不懂的配置选项，看不懂的CMake~.特地找了资料，把&lt;a href=&quot;https://gearyyoung.g
       
+    
+    </summary>
+    
+      <category term="资料" scheme="https://ekko98.github.io/categories/%E8%B5%84%E6%96%99/"/>
+    
+    
+      <category term="Clion" scheme="https://ekko98.github.io/tags/Clion/"/>
+    
+      <category term="CMake" scheme="https://ekko98.github.io/tags/CMake/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于QT的git配置</title>
+    <link href="https://ekko98.github.io/2018/05/16/%E5%9F%BA%E4%BA%8EQT%E7%9A%84git%E9%85%8D%E7%BD%AE/"/>
+    <id>https://ekko98.github.io/2018/05/16/基于QT的git配置/</id>
+    <published>2018-05-16T09:19:00.000Z</published>
+    <updated>2018-05-17T13:32:22.613Z</updated>
+    
+    <summary type="html">
     
     </summary>
     
@@ -40,7 +60,7 @@
     <link href="https://ekko98.github.io/2018/05/15/hello-hexo/"/>
     <id>https://ekko98.github.io/2018/05/15/hello-hexo/</id>
     <published>2018-05-15T05:19:00.000Z</published>
-    <updated>2018-05-16T09:17:51.173Z</updated>
+    <updated>2018-05-17T13:32:21.253Z</updated>
     
     <summary type="html">
     

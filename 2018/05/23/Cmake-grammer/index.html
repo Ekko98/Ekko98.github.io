@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Clion,CMake," />
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="第一次尝试，慢慢改进">
-<meta name="keywords" content="blog,stkevintan,IT,Web Front End,Kevin Tan,kevinsfork">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ekko&#39;s Blog">
-<meta property="og:url" content="https://ekko98.github.io/index.html">
+<meta name="description" content="写这个是因为在deepin下载了CLion，以为可以舒服～的写C/C++。。结果，打开seting一脸茫然，看不懂的配置选项，看不懂的CMake~.特地找了资料，把CMAke的语法🎠一下。 CMake 2.8.3共有80条命令。这些命令在手册中是字典序排列的；为了便于查找，翻译也按照字典序来组织。但是在翻译结束后，会对命令进行小结，与大家讨论一下这些命令的使用方法和使用时机.   add_cus">
+<meta name="keywords" content="Clion,CMake">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Clion-Cmake语法">
+<meta property="og:url" content="https://ekko98.github.io/2018/05/23/Cmake-grammer/index.html">
 <meta property="og:site_name" content="Ekko&#39;s Blog">
-<meta property="og:description" content="第一次尝试，慢慢改进">
+<meta property="og:description" content="写这个是因为在deepin下载了CLion，以为可以舒服～的写C/C++。。结果，打开seting一脸茫然，看不懂的配置选项，看不懂的CMake~.特地找了资料，把CMAke的语法🎠一下。 CMake 2.8.3共有80条命令。这些命令在手册中是字典序排列的；为了便于查找，翻译也按照字典序来组织。但是在翻译结束后，会对命令进行小结，与大家讨论一下这些命令的使用方法和使用时机.   add_cus">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-23T05:22:56.960Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ekko&#39;s Blog">
-<meta name="twitter:description" content="第一次尝试，慢慢改进">
+<meta name="twitter:title" content="Clion-Cmake语法">
+<meta name="twitter:description" content="写这个是因为在deepin下载了CLion，以为可以舒服～的写C/C++。。结果，打开seting一脸茫然，看不懂的配置选项，看不懂的CMake~.特地找了资料，把CMAke的语法🎠一下。 CMake 2.8.3共有80条命令。这些命令在手册中是字典序排列的；为了便于查找，翻译也按照字典序来组织。但是在翻译结束后，会对命令进行小结，与大家讨论一下这些命令的使用方法和使用时机.   add_cus">
 
 
 
@@ -121,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://ekko98.github.io/"/>
+  <link rel="canonical" href="https://ekko98.github.io/2018/05/23/Cmake-grammer/"/>
 
 
 
 
 
-  <title>Ekko's Blog</title>
+  <title>Clion-Cmake语法 | Ekko's Blog</title>
   
 
 
@@ -156,8 +157,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -288,9 +288,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -320,9 +320,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/23/Cmake-grammer/" itemprop="url">Clion-Cmake语法</a></h1>
+          <h1 class="post-title" itemprop="name headline">Clion-Cmake语法</h1>
         
 
         <div class="post-meta">
@@ -405,9 +403,7 @@
       
 
       
-        
-          
-            <p>写这个是因为在deepin下载了<code>CLion</code>，以为可以舒服～的写<code>C/C++</code>。。结果，打开seting一脸茫然，看不懂的配置选项，看不懂的CMake~.特地找了资料，把<a href="https://gearyyoung.gitbooks.io/cmake-api/content/cmake/CMake%E8%AF%AD%E6%B3%95.html" target="_blank" rel="noopener">CMAke的语法</a>🎠一下。</p>
+        <p>写这个是因为在deepin下载了<code>CLion</code>，以为可以舒服～的写<code>C/C++</code>。。结果，打开seting一脸茫然，看不懂的配置选项，看不懂的CMake~.特地找了资料，把<a href="https://gearyyoung.gitbooks.io/cmake-api/content/cmake/CMake%E8%AF%AD%E6%B3%95.html" target="_blank" rel="noopener">CMAke的语法</a>🎠一下。</p>
 <p>CMake 2.8.3共有80条命令。这些命令在手册中是字典序排列的；为了便于查找，翻译也按照字典序来组织。但是在翻译结束后，会对命令进行小结，与大家讨论一下这些命令的使用方法和使用时机.  </p>
 <p><strong>add_custom_command</strong>  </p>
 <p>  为生成的构建系统添加一条自定义的构建规则。   <strong>add_custom_command</strong>命令有两种主要的功能；第一种是为了生成输出文件，添加一条自定义命令。<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">add_custom_command(</span><br><span class="line">   OUTPUT output1 [output2 ...]</span><br><span class="line">	 COMMAND command1 [ARGS] [args1...]</span><br><span class="line">   [COMMAND command2 [ARGS] [args2...] ...]</span><br><span class="line">   [MAIN_DEPENDENCY depend]</span><br><span class="line">   [DEPENDS [depends...]]</span><br><span class="line">   [IMPLICIT_DEPENDS &lt;lang1&gt; depend1 ...]</span><br><span class="line">   [WORKING_DIRECTORY dir]</span><br><span class="line">   [COMMENT comment] [VERBATIM] [APPEND]</span><br><span class="line">   )</span><br></pre></td></tr></table></figure></p>
@@ -439,8 +435,6 @@
 <p>  该命令检查一个给定的策略是否设置为旧行为或新行为。如果策略被设置，输出的变量值会是“OLD”或“NEW”，否则为空。<br>  CMake将策略设置保存在一个栈结构中，因此，cmake_policy命令产生的改变仅仅影响在栈顶端的元素。在策略栈中的一个新条目由各子路径自动管理，以此保护它的父路径及同层路径的策略设置。CMake也管理通过include()和find_package()命令加载的脚本中新加入的条目，除非调用时指定了NO_POLICY_SCOPE选项（另外可参考CMP0011）。cmake_policy命令提供了一种管理策略栈中自定义条目的接口：<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cmake_policy(PUSH)</span><br><span class="line">cmake_policy(POP)</span><br></pre></td></tr></table></figure></p>
 <p>  每个PUSH必须有一个配对的POP来去掉撤销改变。这对于临时改变策略设置比较有用。<br>  函数和宏会在它们被创建的时候记录策略设置，并且在它们被调用的时候使用记录前的策略。如果函数或者宏实现设置了策略，这个变化会通过调用者(caller)一直上传，自动传递到嵌套的最近的策略栈条目。</p>
 
-          
-        
       
     </div>
     
@@ -455,325 +449,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ekko98.github.io/2018/05/16/基于QT的git配置/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ekko">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/my.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ekko's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/16/基于QT的git配置/" itemprop="url">基于QT的git配置</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-16T17:19:00+08:00">
-                2018-05-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Clion/" rel="tag"># Clion</a>
           
-            
+            <a href="/tags/CMake/" rel="tag"># CMake</a>
           
-
-          
-          
-             <span id="/2018/05/16/基于QT的git配置/" class="leancloud_visitors" data-flag-title="基于QT的git配置">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ekko98.github.io/2018/05/15/hello-hexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ekko">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/my.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ekko's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/15/hello-hexo/" itemprop="url">写在开篇</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+              <a href="/2018/05/16/基于QT的git配置/" rel="next" title="基于QT的git配置">
+                <i class="fa fa-chevron-left"></i> 基于QT的git配置
+              </a>
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T13:19:00+08:00">
-                2018-05-15
-              </time>
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/教程/" itemprop="url" rel="index">
-                    <span itemprop="name">教程</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/05/15/hello-hexo/" class="leancloud_visitors" data-flag-title="写在开篇">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <hr>
-<p>今天正式完成了，Hexo博客的搭建以及美化的基本工作。做一下基本的总结（过程中的种种<strong><code>坑</code></strong>）  </p>
-<hr>
-<p>首先，基本的hexo的安装帖子网上很多，可是关于细节有的地方却不尽详细，我先说我的情况。<br>操作系统：<code>deepin15.5</code> 按照<strong><a href="https://blog.csdn.net/dudefu011/article/details/78124146" target="_blank" rel="noopener">教程</a></strong>一步步执行  </p>
-<ol>
-<li><p>安装git  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo apt-get install git</span><br></pre></td></tr></table></figure>
-<p>查看版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git version</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装node.js(安装node.js时，官网有两个版本，一个是长期维护的8一个是10，要注意10是附带npm的而8没有写，这直接影响后边npm命令的安装情况，于是发现这个问题后重新安装了10，费了很多周折）  </p>
-<p>a.很多人都说了可以用sudo apt直接装但是版本不够新，都不推荐，直接用另一方法即可。<br>b.首先<strong><a href="http://nodejs.org/zh-cn/" target="_blank" rel="noopener">官网下载</a></strong>最新版(附带npm)，然后解压。设置软链接将  node,npm命令设置全局命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ln -s /home/dudefu/Documents/node-v8.6.0-linux-x64/bin/node /usr/local/bin/node</span><br><span class="line">$ sudo ln -s /home/dudefu/Documents/node-v8.6.0-linux-x64/bin/npm /usr/local/bin/npm</span><br></pre></td></tr></table></figure>
-<p>查看版本验证</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装hexo </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>hexo-cli 安装路径 /home/dudefu/Documents/node-v8.6.0-linux-x64/lib/node_modules/hexo-cli，此时输入命令hexo会提示“未找到命令”,要将hexo-cli/bin/文件夹下的hexo命令设置为全局:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ln -s /home/dudefu/Documents/node-v8.6.0-linux-x64/lib/node_modules/hexo-cli/bin/</span><br><span class="line">$ hexo /usr/local/bin/hexo</span><br></pre></td></tr></table></figure>
-<p>再次输入即可验证.  </p>
-</li>
-<li><p>创建hexo<br>按照如下命令进行创建并启动服务。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir hexo</span><br><span class="line">$ cd hexo</span><br><span class="line">$ hexo init .</span><br><span class="line">$ npm install </span><br><span class="line">$ hexo server --open</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置hexo<br>想要换一个漂亮主题，可以去官网下载，但我找到的几个都因为配置参数不合适而应用失败。网上主题很多，找到一款自己喜欢的进行配置即可，不过其实发现，博客的配置好用为主，能展示应有的功能，方便简洁就好。当前博客用的next主题，很多功能配置教程很多，比较适用.    </p>
-</li>
-</ol>
-<p>第一篇博客，附上我韵的美照～<br><img src="https://wx2.sinaimg.cn/mw1024/4deda15fly1fpv45czm65j21jk2bce81.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -783,10 +490,17 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -794,6 +508,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjU0Ni8xMzA4MQ=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1034,6 +757,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1062,6 +789,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
